@@ -6,8 +6,7 @@ services:
       - "3306:3306"
     deploy:
       replicas: 1
-    networks:
-      - mynetwork
+    
 
   application:
     image: shaikmustafa/deepika:app
@@ -17,9 +16,6 @@ services:
       replicas: 3
     depends_on:
       - devopsdb
-    networks:
-      - mynetwork
+ 
 
-networks:
-  mynetwork:
-    driver: overlay
+
