@@ -13,7 +13,7 @@ services:
   application:
     image: shaikmustafa/deepika:app
     ports:
-      - "1111:8080"
+      - "1111:8081"
     deploy:
       replicas: 3
     depends_on:
