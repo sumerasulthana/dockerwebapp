@@ -3,7 +3,7 @@ services:
   devopsdb:
     image: shaikmustafa/deepika:db
     ports:
-      - "3306:3306"
+      - "1115:3306"
     deploy:
       replicas: 1
     
@@ -11,7 +11,7 @@ services:
   application:
     image: shaikmustafa/deepika:app
     ports:
-      - "1111:8081"
+      - "1116:8081"
     deploy:
       replicas: 3
     depends_on:
