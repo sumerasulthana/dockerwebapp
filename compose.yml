@@ -13,7 +13,7 @@ services:
     ports:
       - "1116:8081"
     deploy:
-      replicas: 3
+      replicas: 1
     depends_on:
       - devopsdb
  
