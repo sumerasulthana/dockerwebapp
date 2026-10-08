@@ -1,7 +1,7 @@
 
 services:
   devopsdb:
-    image: shaikmustafa/deepika:db
+    image: sumerasulthana/flm-oct:db
     ports:
       - "1115:3306"
     deploy:
@@ -9,7 +9,7 @@ services:
     
 
   application:
-    image: shaikmustafa/deepika:app
+    image: sumerasultha/flm-oct:javaapp
     ports:
       - "1116:8081"
     deploy:
